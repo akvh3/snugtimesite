@@ -19,6 +19,10 @@
         "endOfLine": "auto"
       }
     ],
+    "import/no-unresolved": [
+      2, 
+      { "caseSensitive": false }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
