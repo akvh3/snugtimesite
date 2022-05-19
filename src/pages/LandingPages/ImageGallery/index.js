@@ -27,7 +27,7 @@ import footerRoutes from "footer.routes";
 import Information from "pages/LandingPages/ImageGallery/sections/Information";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/avalon-alpharetta-night.jpg";
 
 
 function ImagesGallery() {
