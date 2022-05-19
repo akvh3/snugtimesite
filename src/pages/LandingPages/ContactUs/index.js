@@ -1,16 +1,8 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.0.0
+* Snuggle Site v1.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
  =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 // Material Kit 2 React components
@@ -76,9 +68,7 @@ const flightDestinations = [
 function ContactUs() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar routes={routes} />
-      </MKBox>
+      <DefaultNavbar routes={routes} />
       <div>
         <ComposableMap>
           <ZoomableGroup zoom={1}>

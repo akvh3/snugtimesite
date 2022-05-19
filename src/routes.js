@@ -46,6 +46,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
+import ImagesGallery from "pages/LandingPages/ImageGallery";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -66,6 +67,7 @@ import Dropdowns from "layouts/sections/elements/dropdowns";
 import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
+
 
 const routes = [
   {
@@ -91,6 +93,11 @@ const routes = [
             name: "author",
             route: "/pages/landing-pages/author",
             component: <Author />,
+          },
+          {
+            name: "gallery",
+            route: "/pages/landing-pages/gallery",
+            component: <ImagesGallery />,
           },
         ],
       },
