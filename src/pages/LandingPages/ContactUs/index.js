@@ -13,14 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// @mui material components
-import Grid from "@mui/material/Grid";
-
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -30,115 +24,95 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-// Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  ZoomableGroup,
+  Marker,
+  Line,
+  Annotation,
+} from "react-simple-maps";
+
+const geoUrl =
+  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+
+const flightDestinations = [
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-97.83602990109904, 31.070996067619074], city: "Fort Hood, Ashton" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-104.95362547433082, 39.718809752100974], city: "Denver, Andrew" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-111.96100600525149, 40.7427165396004], city: "Salt Lake City, Michael" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-84.10645163124381, 35.27747722064885], city: "Forsyth, Eli" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-82.38431842323752, 34.76532825408963], city: "Athens, Nick and Sam" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-86.7427113639612, 36.19961352579025], city: "Nashville, Tyler" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta, Joey and Andy" },
+  },
+  {
+    from: { coord: [-84.29324992404366, 34.07588530732347], city: "Alpharetta" },
+    to: { coord: [127.08493860439953, 36.99308489176252], city: "Pyeongtaek, Matt" },
+  },
+];
 
 function ContactUs() {
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
-            color: "info",
-          }}
-        />
+        <DefaultNavbar routes={routes} />
       </MKBox>
-      <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          md={7}
-          lg={6}
-          xl={4}
-          ml={{ xs: "auto", lg: 6 }}
-          mr={{ xs: "auto", lg: 6 }}
-        >
-          <MKBox
-            bgColor="white"
-            borderRadius="xl"
-            shadow="lg"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            mt={{ xs: 20, sm: 18, md: 20 }}
-            mb={{ xs: 20, sm: 18, md: 20 }}
-            mx={3}
-          >
-            <MKBox
-              variant="gradient"
-              bgColor="info"
-              coloredShadow="info"
-              borderRadius="lg"
-              p={2}
-              mx={2}
-              mt={-3}
-            >
-              <MKTypography variant="h3" color="white">
-                Contact us
-              </MKTypography>
-            </MKBox>
-            <MKBox p={3}>
-              <MKTypography variant="body2" color="text" mb={3}>
-                For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
-              </MKTypography>
-              <MKBox width="100%" component="form" method="post" autocomplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Full Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                  </Grid>
-                </Grid>
-                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
-                  </MKButton>
-                </Grid>
-              </MKBox>
-            </MKBox>
-          </MKBox>
-        </Grid>
-      </Grid>
+      <div>
+        <ComposableMap>
+          <ZoomableGroup zoom={1}>
+            <Geographies geography={geoUrl}>
+              {({ geographies }) =>
+                geographies.map(geo => (
+                  <Geography key={geo.rsmKey} geography={geo} />
+                ))
+              }
+            </Geographies>
+            {flightDestinations.map((route) => (
+          <>
+            <Line
+              key={route.to.city}
+              from={route.from.coord}
+              to={route.to.coord}
+              stroke="red"
+              strokeWidth={1}
+              strokeLinecap="round"
+            />
+            <Marker coordinates={route.to.coord}>
+              <circle r={1} fill="red" />
+            </Marker>
+              
+            <Annotation subject={route.to.coord} dx={0} dy={0} fill="red">
+              <text fontSize="2px" x="3">
+                {route.to.city}
+              </text>
+            </Annotation>
+          </>
+        ))}
+          </ZoomableGroup>
+        </ComposableMap>
+    </div>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

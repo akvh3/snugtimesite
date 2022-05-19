@@ -13,18 +13,13 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
     "import/no-unresolved": [
       2, 
       { "caseSensitive": false }
     ],
     "react/react-in-jsx-scope": "off",
     "react/forbid-prop-types": "off",
+    "prettier/prettier": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-props-no-spreading": [
       1,
