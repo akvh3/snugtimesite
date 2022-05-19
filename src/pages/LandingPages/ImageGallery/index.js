@@ -70,11 +70,11 @@ function ImagesGallery() {
                     },
                 })}
                 >
-                Work with an amazing design
+                View the visual history of Snuggle Time
                 </MKTypography>
                 <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-                We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-                have the opportunity to play this game
+                With pictures that go as far back as our childhood and are as recent as this year, get a true grasp
+                of the timeline of the boys.
                 </MKTypography>
                 
             </Grid>
