@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Experience the
                     <br />
-                    Material Kit
+                    Snuggle
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="A historian's look at a group of friends that will be spoken of for generations."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="Experience the history of this legendary group of friends."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/pages/landing-pages/about-us",
+                  label: "Learn About Us",
                 }}
               />
             </RotatingCard>
