@@ -26,7 +26,7 @@ import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
 import team1 from "assets/images/tyler.png";
-import team4 from "assets/images/nick.png";
+// import team4 from "assets/images/nick.png";
 import team5 from "assets/images/andy.png";
 import team2 from "assets/images/joe.png";
 import team3 from "assets/images/matt.png";
@@ -99,7 +99,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
+                image="https://imagedump.imgix.net/nick.PNG"
                 name="Nick Butzow"
                 position={{ color: "info", label: "The Sneak" }}
                 description="This man will pass under the radar so elitely you might forget he's there unless you say Hey Nick."
