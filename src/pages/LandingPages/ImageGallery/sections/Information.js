@@ -59,6 +59,15 @@ function Information() {
                   <ReactPlayer url='https://streamable.com/4h81mi' />
                 </MKBox>
               </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/IMG_9887.JPG"
+                    title="MILK"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
