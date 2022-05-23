@@ -25,16 +25,16 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/tyler.png";
+import team1 from "assets/images/tyler.PNG";
 // import team4 from "assets/images/nick.png";
-import team5 from "assets/images/andy.png";
-import team2 from "assets/images/joe.png";
-import team3 from "assets/images/matt.png";
-import team6 from "assets/images/sam.png";
-import team7 from "assets/images/eli.png";
-import team8 from "assets/images/mike.png";
-import team9 from "assets/images/ashton.png";
-import team10 from "assets/images/andrew.png";
+import team5 from "assets/images/andy.PNG";
+import team2 from "assets/images/joe.PNG";
+import team3 from "assets/images/matt.PNG";
+import team6 from "assets/images/sam.PNG";
+import team7 from "assets/images/eli.PNG";
+import team8 from "assets/images/mike.PNG";
+import team9 from "assets/images/ashton.PNG";
+import team10 from "assets/images/andrew.PNG";
 
 function Team() {
   return (
