@@ -24,6 +24,7 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks"
 
 // Routes
 import routes from "routes";
@@ -87,8 +88,8 @@ function Presentation() {
       >
         <Counters />
         <Information />
-        {/* <DesignBlocks />
-        <Pages />
+        {/* <DesignBlocks /> */}
+        {/* <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container> */}
@@ -96,7 +97,6 @@ function Presentation() {
           <Grid container spacing={6} sx={{ mx: "auto" }} >
             <Grid item xs={12} lg={4} mx={14}>
               <FilledInfoCard
-                variant="gradient"
                 color="info"
                 icon="map"
                 title="Snuggle Map"
@@ -110,6 +110,7 @@ function Presentation() {
             </Grid>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
+                variant="gradient"
                 color="info"
                 icon="collections"
                 title="The Gallery"
