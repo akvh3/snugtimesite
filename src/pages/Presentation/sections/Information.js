@@ -65,33 +65,32 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="all_inclusive"
+                  title="A Lifetime"
+                  description="The friendships that will last a lifetime, documented right here on this site."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="archive"
+                  title="An Archive"
+                  description="Check out the archives that date back as far as 15 years from the boys."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="video_library"
+                  title="All Sorts of Media"
+                  description="Whether its pictures, videos, or personal accounts from the historian, it can all be found here."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="expand"
+                  title="Fully Expandable"
+                  description="A Snuggle Time member has an idea for something to add? Ask your friendly historian/website developer."
                 />
               </Grid>
             </Grid>
