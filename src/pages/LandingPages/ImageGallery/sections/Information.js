@@ -68,6 +68,56 @@ function Information() {
                   />
                 </MKBox>
               </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/JimJoins_Original.JPG"
+                    title="jim"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/IMG_9886.JPG"
+                    title="swag"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/IMG_9883.PNG"
+                    title="pimp"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/IMG_9307.PNG"
+                    title="high"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ImageCard
+                    image="https://imagedump.imgix.net/IMG_9651.JPG"
+                    title="doughy"
+                    description=""
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <ReactPlayer url='https://streamable.com/l0riv5' />
+                </MKBox>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
