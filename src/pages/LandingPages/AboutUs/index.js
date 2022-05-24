@@ -26,8 +26,6 @@ import Team from "pages/LandingPages/AboutUs/sections/Team";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-// Images
-import bgImage from "assets/images/bgthing.PNG";
 
 function AboutUs() {
   return (
@@ -41,7 +39,7 @@ function AboutUs() {
             `${linearGradient(
               rgba(gradients.dark.main, 0.6),
               rgba(gradients.dark.state, 0.6)
-            )}, url(${bgImage})`,
+            )}, url(https://imagedump.imgix.net/bgthing.PNG)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",

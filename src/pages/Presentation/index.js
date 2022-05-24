@@ -30,8 +30,6 @@ import Information from "pages/Presentation/sections/Information";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-// Images
-import bgImage from "assets/images/bg-presentation.png";
 
 function Presentation() {
   return (
@@ -41,7 +39,7 @@ function Presentation() {
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(https://imagedump.imgix.net/bg-presentation.png)`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
